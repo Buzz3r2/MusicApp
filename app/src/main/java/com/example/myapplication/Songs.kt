@@ -42,4 +42,9 @@ class Songs (songName: String, songArtist: String, songYear: Int, songDuration: 
         Log.v("Song", "$name is favourited.")
         return true
     }
+
+    // function to display the songs
+    fun GetDisplayString() : String {
+        return "$name - $artist ($duration)"
+    }
 }
